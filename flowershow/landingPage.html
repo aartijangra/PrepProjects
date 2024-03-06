@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            font-family: Poppins;
+            
+        }
+        .bg-body-tertiary {
+            /* adding shadow to the navbar to look it more good */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .d-flex{
+            gap: 15px;
+        }
+        .btn-outline-success{
+            color: white;
+            background-color: green;
+        }
+
+        .card-group {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* Define 3 equal columns */
+            grid-template-rows: repeat(2, 1fr);
+            /* Define 2 equal rows */
+            gap: 10px;
+            /* Add spacing between cards */
+            margin: 30px;
+            /* Center the container horizontally */
+            padding: 10px;
+        }
+        .card{
+            margin: 10px;
+            /* box-shadow */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        }
+        h2{
+            text-align: center;
+            margin: 20px;
+            font-weight: bolder;
+
+        }
+        .lines{
+            text-align: center;
+            margin: 20px;
+            color: rgb(90, 90, 90);
+            font-size: larger;
+            text-wrap: normal;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <h1>The Flower Show</h1>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <h2 class="h2">Flower Website</h2>
+    <p class="lines">"Imagine strolling hand-in-hand through fragrant flower displays. Join me at the flower show,<br> and let's create a memory as beautiful as the blooms."</p>
+
+    <div class="card-group">
+        <div class="card" style="width: 18rem;">
+            <img src="lotus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">LOTUS</h5>
+                <p class="card-text">The Lotus symbolises beauty, purity, and knowledge. This flower grows in muddy waters in ponds, lakes, and shallow water bodies. The lotus has big petals and large round leaves. The flower is considered sacred and is widely used in temples.</p>
+                <a href="https://en.wikipedia.org/wiki/Nelumbo_nucifera" class="btn btn-primary">View more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="iris.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">IRIS</h5>
+                <p class="card-text">Iris is a flowering plant with showy flowers. As well as being the scientific name, iris is also widely used as a common name for all Iris species, as well as some belonging to other closely related genera. It is a popular garden flower.</p>
+                <a href="https://en.wikipedia.org/wiki/Iris_(plant)" class="btn btn-primary">View more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="rose.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ROSE</h5>
+                <p class="card-text">A rose is either a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears.They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.</p>
+                <a href="https://en.wikipedia.org/wiki/Rose" class="btn btn-primary">View more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="daisy.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">DAISY</h5>
+                <p class="card-text">Daisy, is a European species of the family Asteraceae, often considered the archetypal species of the name daisy. To distinguish this species from other plants known as daisies, it is sometimes qualified as common, lawn or English daisy.</p>
+                <a href="https://en.wikipedia.org/wiki/Bellis_perennis" class="btn btn-primary">View more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="tulip3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">TULIPS</h5>
+                <p class="card-text">Tulips are spring-blooming. Tulipa genus flowers are usually large, showy, and brightly coloured, generally red, orange, pink, yellow, or white. They often have a different coloured blotch at the base of the tepals (petals and sepals, collectively).</p>
+                <a href="https://en.wikipedia.org/wiki/Tulip" class="btn btn-primary">View more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="sun3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">SUNFLOWER</h5>
+                <p class="card-text">The sunflower is a species of large annual forb of the genus Helianthus. It is commonly grown as a crop for its edible oily seeds. Apart from cooking oil production, it is also used as livestock forage, as bird food, and as an ornamental in domestic gardens.</p>
+                <a href="https://en.wikipedia.org/wiki/Common_sunflower" class="btn btn-primary">View more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="jas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">JASMINE</h5>
+                <p class="card-text">Jasmine can be either deciduous or evergreen, and can be erect, spreading, or climbing shrubs and vines. Their leaves are borne in opposing or alternating arrangement and can be of simple or pinnate formation.</p>
+                <a href="https://en.wikipedia.org/wiki/Jasmine" class="btn btn-primary">View more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="lilyy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">LILY</h5>
+                <p class="card-text">Lilies are tall perennials, 2 to 6 feet tall. They form naked or tunicless scaly underground bulbs, which are their reproductive organs. In some North American species, rhizomes develop from the base of a bulb containing many small bulbs.</p>
+                <a href="https://en.wikipedia.org/wiki/Lilium" class="btn btn-primary">View more</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

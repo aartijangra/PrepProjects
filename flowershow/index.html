@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Show</title>
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- style for this form -->
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(flowerbg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            /* decrease the backgound image opacity */
+            backdrop-filter: blur(5px);
+            /* Blur and increase color saturation */
+
+            
+        }
+
+        form {
+            width: 400px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* White with 80% opacity */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Subtle shadow */
+            backdrop-filter: blur(5px) saturate(150%);
+            /* Blur and increase color saturation */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            /* Green color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            opacity: 100;
+        }
+
+        button:hover {
+            background-color: #45A049;
+            /* Darker green on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- login page using bootstrap -->
+    <form>
+        <h1>Login Form</h1>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="button">Submit</button>
+    </form>
+    <script>
+
+        // create a function to redirect the page to wallpapers.com by clicking on submit button
+        function redirectToWallpapers() {
+            window.location.href = "landingPage.html"; // Replace with desired URL if necessary
+        }
+
+        document.querySelector(".button").addEventListener("click", ()=> {
+            event.preventDefault(); // Prevent default form submission
+            redirectToWallpapers();
+           
+        });
+
+    </script>
+
+</body>
+
+</html>
